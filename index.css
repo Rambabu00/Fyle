@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #80ffcc, #b2f8b2);
+    margin: 30px;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+.header-container{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+     
+}
+.profile{
+    display: flex;
+    flex-flow: row  wrap;
+    gap: 50px;
+    
+}
+.image{
+    width: 200px;
+   height: 200px;
+    border: 2px solid rgb(178, 168, 168);
+    border-radius: 50%;
+}
+.image img{
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+}
+.about{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding-top: 25px;
+}
+.link{
+    position: relative;
+     
+}
+ .link a{
+    text-decoration: none;
+    position: absolute; 
+    top: -1px; 
+    padding-left: 5px;
+    color: black;
+ }
+ .input{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+ }
+ .input input{
+    width: 50%;
+   height: 5vh;
+   border: 2px solid rgb(103, 100, 100);
+   border-radius: 5px;
+   padding-left: 5px;
+ }
+ .input button{
+    width: 9vw;
+    background-color: rgb(0, 157, 255);
+    border: 4px solid rgb(0, 157, 255);
+    border-radius: 5px;
+   color: black;
+   letter-spacing: 2px;
+   
+ }
+ .input button:active{
+    transform: scale(0.9);
+ }
+ .loader{
+   border: 8px solid #f3f3f3; 
+   border-top: 8px solid #3498db;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   animation: spin 1s linear infinite;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+    
+ }
+ @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ .loaderContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column wrap;
+ }
+ .loaderContainer p{
+     position: relative;
+     top: 20px;
+ }
+ .body-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    margin-top: 10px;
+ }
+ .repo{
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+  background-image: linear-gradient(to left white, rgba(235, 229, 229, 0.685));
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 7px white, 0px 0px 14px white, 0px 0px 20px white;
+  color: black;
+  gap: 10px;
+  padding: 20px;
+ }
+ .repo h4{
+     color: black;
+     letter-spacing: 3px;
+     text-transform: capitalize;
+ }
+ .repo .languages{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+ }
+ .repo .languages div{
+    width: auto;
+    height: auto;
+    padding: 3px;
+    background-color: #f3f3f3;
+    box-shadow: 0px 0px 7px #f3f3f3;
+    border: 1px solid #b2f8b2;
+ }
+ .footer-container{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+ }
+ .footer-container span{
+    display: block;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 6px white;
+    cursor: pointer;
+
+ }
+ .footer-container .active{
+    background-color: #3498db;
+ }
+ .search{
+    width: 50%;
+    height: 5vh;
+    border: 2px solid rgb(103, 100, 100);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: 0 auto;
+    
+ }
+ .search::placeholder{
+    letter-spacing: 4px;
+ }
