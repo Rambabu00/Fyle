@@ -22,6 +22,7 @@ async function getUser(){
            //data url is not exist or data.message is exist it means there is no user having this userName
            if(!data.url || data.message){
            alert("Username is not exists");
+           container.innerHTML
            }
            // if userName exist will render the profile
            else {
